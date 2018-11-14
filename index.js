@@ -1,36 +1,38 @@
 (function () {
 
-  window.arkaneConnect = new ArkaneConnect('Devoxx', ['Ethereum'], 'staging');
-
-  window.arkaneConnect
-    .checkAuthenticated()
-    .then((result) => result.authenticated((auth) => {
-        initializeWallets();
-        initializeProfile();
-      })
-        .notAuthenticated((auth) => {
-          console.log('not authenticated')
-          window.arkaneConnect.authenticate();
-        })
-    )
-    .catch(reason => {
-      console.log(reason);
-    });
+  initializeWallets();
+  initializeProfile();
 
   function initializeProfile() {
-    arkaneConnect.getProfile().then((profile) => {
-      setUsername(profile.userId);
-    });
+    setUsername('Quinten De Swaef');
   }
 
   function initializeWallets() {
-    arkaneConnect.getWallets()
-      .then((wallets) => {
-        for (const wallet of wallets) {
-          addRow(wallet);
+    const wallets = [
+      {
+        id: '100',
+        description: 'Devoxx Hardcoded Wallet 1',
+        secretType: 'ETHEREUM',
+        address: '0x742d35cc6634c0532925a3b844bc454e4438f44e',
+        balance: {
+          balance: 'poor'
         }
-        $('.btnSend').click(doTransaction);
-      });
+      },
+      {
+        id: '101',
+        description: 'Devoxx Hardcoded Wallet 1',
+        secretType: 'VECHAIN',
+        address: '0x281055afc982d96fab65b3a49cac8b878184cb16',
+        balance: {
+          balance: 'very poor'
+        }
+      }
+    ];
+
+    for (const wallet of wallets) {
+      addRow(wallet);
+    }
+    $('.btnSend').click(doTransaction);
   }
 
   function doTransaction(caller) {
@@ -38,22 +40,9 @@
     let secretType = $(caller.target).data('secretType');
     let to = $('#btnSendFunds').val();
 
-    window.arkaneConnect
-      .buildTransactionRequest({
-        walletId: walletId,
-        to: to,
-        value: 0.1,
-        secretType: secretType
-      })
-      .then(transactionRequest => {
-        window.arkaneConnect
-          .executeTransaction(transactionRequest)
-          .then(function (result) {
-            console.log(result);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      });
-  };
+    swal({
+      text: `I'm not sure how to do this without Arkane...`,
+      icon: 'error'
+    });
+  }
 })();

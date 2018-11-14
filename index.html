@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Simple Tables</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/css/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <script src="./node_modules/@arkane-network/arkane-connect/connect.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../index2.html" class="logo">
+      <span class="logo-mini"><b>Dx</b>D</span>
+      <span class="logo-lg"><b>Devoxx</b>DEMO</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">John Doe</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Your Wallets
+        <small>Preview of all your wallets</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Demo</a></li>
+        <li class="active">Wallets</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Your Wallets</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="tblWallets" class="table table-bordered">
+                <tr>
+                  <th>Description</th>
+                  <th>Address</th>
+                  <th>Type</th>
+                  <th>Balance</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Demo Application</b>
+    </div>
+    <strong>Copyright &copy; 2018 <a href="https://arkane.network">Arkane Network</a>.</strong> All rights
+    reserved.
+  </footer>
+</div>
+
+<script id="hidden-template" type="text/x-custom-template">
+  <tr>
+    <td id="description"></td>
+    <td id="address"></td>
+    <td><span class="badge bg-purple" id="type">Vechain</span></td>
+    <td id="balance">0</td>
+    <td>
+      <button type="button" class="btnSend btn bg-purple btn-flat margin">send 1 magical internet money</button>
+    </td>
+  </tr>
+</script>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.slimscroll.min.js"></script>
+<script src="/js/fastclick.js"></script>
+<script src="/js/adminlte.min.js"></script>
+<script src="/js/demo.js"></script>
+<script src="/js/helpers.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

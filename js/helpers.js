@@ -4,7 +4,8 @@ function addRow(wallet) {
   $(item).find('#description').html(wallet.description);
   $(item).find('#address').html(wallet.address);
   $(item).find('#balance').html(wallet.balance.balance);
-  $(item).find('#type').html(wallet.type);
+  $(item).find('#secretType').html(wallet.secretType);
   $(item).find('.btnSend').data("wallet-id", wallet.id);
+  $(item).find('.btnSend').data("secretType", wallet.secretType.toUpperCase());
   $('#tblWallets').append(item);
 }

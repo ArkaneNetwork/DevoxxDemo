@@ -9,3 +9,7 @@ function addRow(wallet) {
   $(item).find('.btnSend').data("secretType", wallet.secretType.toUpperCase());
   $('#tblWallets').append(item);
 }
+
+function setUsername(userName) {
+  $('#username').html(userName);
+}

@@ -6,6 +6,7 @@
     .checkAuthenticated()
     .then((result) => result.authenticated((auth) => {
         initializeWallets();
+        initializeProfile();
       })
         .notAuthenticated((auth) => {
           console.log('not authenticated')
@@ -15,6 +16,12 @@
     .catch(reason => {
       console.log(reason);
     });
+
+  function initializeProfile() {
+    arkaneConnect.getProfile().then((profile) => {
+      setUsername(profile.userId);
+    });
+  }
 
   function initializeWallets() {
     arkaneConnect.getWallets()

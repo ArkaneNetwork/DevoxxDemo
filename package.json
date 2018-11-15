@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@arkane-network/arkane-connect": "0.0.27"
+    "@arkane-network/arkane-connect": "0.0.32"
   }
 }

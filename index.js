@@ -9,7 +9,6 @@
         initializeProfile();
       })
         .notAuthenticated((auth) => {
-          console.log('not authenticated')
           window.arkaneConnect.authenticate();
         })
     )
@@ -19,7 +18,7 @@
 
   function initializeProfile() {
     arkaneConnect.getProfile().then((profile) => {
-      setUsername(profile.userId);
+      setUsername(profile.firstName + " " + profile.lastName);
     });
   }
 

@@ -37,26 +37,19 @@
     let secretType = $(caller.target).data('secretType');
     let to = $('#btnSendFunds').val();
 
-    window.arkaneConnect
-      .buildTransactionRequest({
-        walletId: walletId,
-        to: to,
-        value: 0.1,
-        secretType: secretType
-      })
-      .then(transactionRequest => {
-        window.arkaneConnect
-          .executeTransaction(transactionRequest)
-          .then(function (result) {
-            console.log(result);
-            swal({
-              text: 'Successfully submitted transaction: ' + result.result.transactionHash,
-              icon: 'success'
-            })
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+    const signer = arkaneConnect.createSigner();
+    arkaneConnect.buildTransactionRequest({
+      walletId: walletId,
+      secretType: secretType,
+      to: to,
+      value: 0.1
+    }).then((transactionRequest) => {
+      signer.executeTransaction(transactionRequest).then((response) => {
+        swal({
+          text: response.result.transactionHash,
+          icon: 'success'
+        });
       });
-  };
+    });
+  }
 })();

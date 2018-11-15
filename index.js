@@ -50,6 +50,10 @@
           .executeTransaction(transactionRequest)
           .then(function (result) {
             console.log(result);
+            swal({
+              text: 'Successfully submitted transaction: ' + result.result.transactionHash,
+              icon: 'success'
+            })
           })
           .catch(function (error) {
             console.log(error);

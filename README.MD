@@ -17,7 +17,7 @@ Initial-state is the code without Arkane integration, finished-state contains th
 The main Arkane component being used in this demo is Arkane Connect, a Javascript library, you can find the full documentation [here](https://www.npmjs.com/package/@arkane-network/arkane-connect).
 
 
-![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo.png "Demo app screenshot")
+![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo2.png "Demo app screenshot")
 ![Demo Arkane screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo_arkane.png "Demo Arkane screenshot")
 
 ### Explainer Video

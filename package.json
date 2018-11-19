@@ -4,10 +4,12 @@
   "description": "Demo Application for Arkane",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-serve -p 4000 -c -1"
+    "serve": "npx http-serve -p 4000 -c -1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "http-serve": "^1.0.1"
   }
 }

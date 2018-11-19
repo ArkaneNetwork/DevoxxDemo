@@ -1,4 +1,4 @@
-# DevoxxDemo <img align="right" src="https://github.com/ArkaneNetwork.png?size=30" />
+# Devoxx Demo <img align="right" src="https://github.com/ArkaneNetwork.png?size=30" />
 
 Small basic wallet application showcasing Arkane Connect.
 * Authenticate through Arkane
@@ -18,3 +18,7 @@ The main Arkane component being used in this demo is Arkane Connect, a Javascrip
 
 
 ![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo.png "Demo app screenshot")
+
+### Explainer Video
+During our Devoxx talk we explain the wallet demo, you can find the explaination in the video below.
+[![Watch the video](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/video.png)](https://www.youtube.com/watch?v=Xu-ofgrwKLw)

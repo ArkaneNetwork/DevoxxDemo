@@ -9,4 +9,4 @@ The Demo is connect to the staging environemnt of Arkane and is using the client
 Applications that would like to be connected to the mainnet will receive their own personal client.
 
 
-![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/master/screen_demo.png "Demo app screenshot")
+![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo.png "Demo app screenshot")

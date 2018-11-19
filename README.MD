@@ -4,9 +4,9 @@ Small basic wallet application showcasing Arkane Connect.
 
 * Authenticate through Arkane
 * Fetch user's wallets (including link/unlink)
-* Transfer a small amount of internet money
+* Transfer a small amount of magical internet money
 
-The Demo is connected to the staging environment of Arkane and is using the client 'Devoxx', which is free to use in our playground. Applications that would like to be connected to the mainnet will receive their own personal client.
+The Demo is connected to the staging environment of Arkane and is using the client '**Devoxx**', which is free to use in our playground. Applications that would like to be connected to the mainnet will receive their own personal client.
 
 This repository contains 2 branches 
 * [initial-state](https://github.com/ArkaneNetwork/DevoxxDemo/tree/initial-state)

@@ -20,7 +20,7 @@ The main Arkane component being used in this demo is Arkane Connect, a Javascrip
 ![Demo app screenshot](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/screen_demo.png "Demo app screenshot")
 
 ### Explainer Video
-[![Watch the video](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/video.png)](https://www.youtube.com/watch?v=Xu-ofgrwKLw&t=34m)
+[![Watch the video](https://github.com/ArkaneNetwork/DevoxxDemo/raw/initial-state/README/video.png)](https://www.youtube.com/embed/Xu-ofgrwKLw?autoplay=1&start=2040)
 
 During our Devoxx talk, we explain the wallet demo, you can find the explanation in the video above.
 

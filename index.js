@@ -1,6 +1,6 @@
 (function () {
 
-  window.arkaneConnect = new ArkaneConnect('Devoxx', ['Ethereum'], 'staging');
+  window.arkaneConnect = new ArkaneConnect('Devoxx', {chains: ['Ethereum'], environment: 'staging'});
 
   window.arkaneConnect
     .checkAuthenticated()
